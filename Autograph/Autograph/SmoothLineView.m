@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 #define DEFAULT_COLOR [UIColor blackColor]
-#define DEFAULT_WIDTH 5.0f
+#define DEFAULT_WIDTH 2.0f
 
 @interface SmoothLineView () 
 
