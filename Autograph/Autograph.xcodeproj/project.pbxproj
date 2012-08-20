@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		500DD8A515E2160A006A53BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500DD8A415E2160A006A53BD /* UIKit.framework */; };
+		500DD8A715E2160A006A53BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500DD8A615E2160A006A53BD /* Foundation.framework */; };
+		500DD8A915E2160A006A53BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500DD8A815E2160A006A53BD /* CoreGraphics.framework */; };
+		500DD8AF15E2160A006A53BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 500DD8AD15E2160A006A53BD /* InfoPlist.strings */; };
+		500DD8B115E2160A006A53BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD8B015E2160A006A53BD /* main.m */; };
+		500DD8B515E2160A006A53BD /* jotAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD8B415E2160A006A53BD /* jotAppDelegate.m */; };
+		500DD8B815E2160A006A53BD /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500DD8B615E2160A006A53BD /* MainStoryboard_iPhone.storyboard */; };
+		500DD8BB15E2160A006A53BD /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500DD8B915E2160A006A53BD /* MainStoryboard_iPad.storyboard */; };
+		500DD8BE15E2160A006A53BD /* jotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD8BD15E2160A006A53BD /* jotViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		500DD8A015E2160A006A53BD /* Autograph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autograph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		500DD8A415E2160A006A53BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		500DD8A615E2160A006A53BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		500DD8A815E2160A006A53BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		500DD8AC15E2160A006A53BD /* Autograph-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Autograph-Info.plist"; sourceTree = "<group>"; };
+		500DD8AE15E2160A006A53BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		500DD8B015E2160A006A53BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		500DD8B215E2160A006A53BD /* Autograph-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Autograph-Prefix.pch"; sourceTree = "<group>"; };
+		500DD8B315E2160A006A53BD /* jotAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jotAppDelegate.h; sourceTree = "<group>"; };
+		500DD8B415E2160A006A53BD /* jotAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jotAppDelegate.m; sourceTree = "<group>"; };
+		500DD8B715E2160A006A53BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		500DD8BA15E2160A006A53BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		500DD8BC15E2160A006A53BD /* jotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jotViewController.h; sourceTree = "<group>"; };
+		500DD8BD15E2160A006A53BD /* jotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jotViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		500DD89D15E2160A006A53BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500DD8A515E2160A006A53BD /* UIKit.framework in Frameworks */,
+				500DD8A715E2160A006A53BD /* Foundation.framework in Frameworks */,
+				500DD8A915E2160A006A53BD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		500DD89515E2160A006A53BD = {
+			isa = PBXGroup;
+			children = (
+				500DD8AA15E2160A006A53BD /* Autograph */,
+				500DD8A315E2160A006A53BD /* Frameworks */,
+				500DD8A115E2160A006A53BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		500DD8A115E2160A006A53BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				500DD8A015E2160A006A53BD /* Autograph.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		500DD8A315E2160A006A53BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				500DD8A415E2160A006A53BD /* UIKit.framework */,
+				500DD8A615E2160A006A53BD /* Foundation.framework */,
+				500DD8A815E2160A006A53BD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		500DD8AA15E2160A006A53BD /* Autograph */ = {
+			isa = PBXGroup;
+			children = (
+				500DD8B315E2160A006A53BD /* jotAppDelegate.h */,
+				500DD8B415E2160A006A53BD /* jotAppDelegate.m */,
+				500DD8B615E2160A006A53BD /* MainStoryboard_iPhone.storyboard */,
+				500DD8B915E2160A006A53BD /* MainStoryboard_iPad.storyboard */,
+				500DD8BC15E2160A006A53BD /* jotViewController.h */,
+				500DD8BD15E2160A006A53BD /* jotViewController.m */,
+				500DD8AB15E2160A006A53BD /* Supporting Files */,
+			);
+			path = Autograph;
+			sourceTree = "<group>";
+		};
+		500DD8AB15E2160A006A53BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				500DD8AC15E2160A006A53BD /* Autograph-Info.plist */,
+				500DD8AD15E2160A006A53BD /* InfoPlist.strings */,
+				500DD8B015E2160A006A53BD /* main.m */,
+				500DD8B215E2160A006A53BD /* Autograph-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500DD89F15E2160A006A53BD /* Autograph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500DD8C115E2160A006A53BD /* Build configuration list for PBXNativeTarget "Autograph" */;
+			buildPhases = (
+				500DD89C15E2160A006A53BD /* Sources */,
+				500DD89D15E2160A006A53BD /* Frameworks */,
+				500DD89E15E2160A006A53BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Autograph;
+			productName = Autograph;
+			productReference = 500DD8A015E2160A006A53BD /* Autograph.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		500DD89715E2160A006A53BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = jot;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = Max;
+			};
+			buildConfigurationList = 500DD89A15E2160A006A53BD /* Build configuration list for PBXProject "Autograph" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 500DD89515E2160A006A53BD;
+			productRefGroup = 500DD8A115E2160A006A53BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				500DD89F15E2160A006A53BD /* Autograph */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		500DD89E15E2160A006A53BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500DD8AF15E2160A006A53BD /* InfoPlist.strings in Resources */,
+				500DD8B815E2160A006A53BD /* MainStoryboard_iPhone.storyboard in Resources */,
+				500DD8BB15E2160A006A53BD /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		500DD89C15E2160A006A53BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500DD8B115E2160A006A53BD /* main.m in Sources */,
+				500DD8B515E2160A006A53BD /* jotAppDelegate.m in Sources */,
+				500DD8BE15E2160A006A53BD /* jotViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		500DD8AD15E2160A006A53BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				500DD8AE15E2160A006A53BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		500DD8B615E2160A006A53BD /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				500DD8B715E2160A006A53BD /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		500DD8B915E2160A006A53BD /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				500DD8BA15E2160A006A53BD /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		500DD8BF15E2160A006A53BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		500DD8C015E2160A006A53BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		500DD8C215E2160A006A53BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Autograph/Autograph-Prefix.pch";
+				INFOPLIST_FILE = "Autograph/Autograph-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		500DD8C315E2160A006A53BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Autograph/Autograph-Prefix.pch";
+				INFOPLIST_FILE = "Autograph/Autograph-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		500DD89A15E2160A006A53BD /* Build configuration list for PBXProject "Autograph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500DD8BF15E2160A006A53BD /* Debug */,
+				500DD8C015E2160A006A53BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		500DD8C115E2160A006A53BD /* Build configuration list for PBXNativeTarget "Autograph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500DD8C215E2160A006A53BD /* Debug */,
+				500DD8C315E2160A006A53BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 500DD89715E2160A006A53BD /* Project object */;
+}
