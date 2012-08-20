@@ -16,6 +16,14 @@
 		500DD8B815E2160A006A53BD /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500DD8B615E2160A006A53BD /* MainStoryboard_iPhone.storyboard */; };
 		500DD8BB15E2160A006A53BD /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500DD8B915E2160A006A53BD /* MainStoryboard_iPad.storyboard */; };
 		500DD8BE15E2160A006A53BD /* jotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD8BD15E2160A006A53BD /* jotViewController.m */; };
+		500DD8D515E21859006A53BD /* BezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD8C715E21859006A53BD /* BezierCurve.m */; };
+		500DD8D615E21859006A53BD /* CatmullRomSpline.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD8C915E21859006A53BD /* CatmullRomSpline.m */; };
+		500DD8D715E21859006A53BD /* CubicBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD8CC15E21859006A53BD /* CubicBezierCurve.m */; };
+		500DD8D815E21859006A53BD /* LinearBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD8CE15E21859006A53BD /* LinearBezierCurve.m */; };
+		500DD8D915E21859006A53BD /* NSArray_PointArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD8D015E21859006A53BD /* NSArray_PointArray.m */; };
+		500DD8DA15E21859006A53BD /* QuadraticBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD8D215E21859006A53BD /* QuadraticBezierCurve.m */; };
+		500DD8DB15E21859006A53BD /* Spline.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD8D415E21859006A53BD /* Spline.m */; };
+		500DD8E115E218C3006A53BD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500DD8E015E218C3006A53BD /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +41,24 @@
 		500DD8BA15E2160A006A53BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		500DD8BC15E2160A006A53BD /* jotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jotViewController.h; sourceTree = "<group>"; };
 		500DD8BD15E2160A006A53BD /* jotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jotViewController.m; sourceTree = "<group>"; };
+		500DD8C615E21859006A53BD /* BezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierCurve.h; sourceTree = "<group>"; };
+		500DD8C715E21859006A53BD /* BezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierCurve.m; sourceTree = "<group>"; };
+		500DD8C815E21859006A53BD /* CatmullRomSpline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatmullRomSpline.h; sourceTree = "<group>"; };
+		500DD8C915E21859006A53BD /* CatmullRomSpline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatmullRomSpline.m; sourceTree = "<group>"; };
+		500DD8CA15E21859006A53BD /* CGPointArithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPointArithmetic.h; sourceTree = "<group>"; };
+		500DD8CB15E21859006A53BD /* CubicBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubicBezierCurve.h; sourceTree = "<group>"; };
+		500DD8CC15E21859006A53BD /* CubicBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubicBezierCurve.m; sourceTree = "<group>"; };
+		500DD8CD15E21859006A53BD /* LinearBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearBezierCurve.h; sourceTree = "<group>"; };
+		500DD8CE15E21859006A53BD /* LinearBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearBezierCurve.m; sourceTree = "<group>"; };
+		500DD8CF15E21859006A53BD /* NSArray_PointArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArray_PointArray.h; sourceTree = "<group>"; };
+		500DD8D015E21859006A53BD /* NSArray_PointArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArray_PointArray.m; sourceTree = "<group>"; };
+		500DD8D115E21859006A53BD /* QuadraticBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadraticBezierCurve.h; sourceTree = "<group>"; };
+		500DD8D215E21859006A53BD /* QuadraticBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadraticBezierCurve.m; sourceTree = "<group>"; };
+		500DD8D315E21859006A53BD /* Spline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spline.h; sourceTree = "<group>"; };
+		500DD8D415E21859006A53BD /* Spline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spline.m; sourceTree = "<group>"; };
+		500DD8E015E218C3006A53BD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		500DD8E215E218E9006A53BD /* SmoothLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmoothLineView.h; sourceTree = "<group>"; };
+		500DD8E315E218E9006A53BD /* SmoothLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmoothLineView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500DD8E115E218C3006A53BD /* QuartzCore.framework in Frameworks */,
 				500DD8A515E2160A006A53BD /* UIKit.framework in Frameworks */,
 				500DD8A715E2160A006A53BD /* Foundation.framework in Frameworks */,
 				500DD8A915E2160A006A53BD /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +79,7 @@
 		500DD89515E2160A006A53BD = {
 			isa = PBXGroup;
 			children = (
+				500DD8E015E218C3006A53BD /* QuartzCore.framework */,
 				500DD8AA15E2160A006A53BD /* Autograph */,
 				500DD8A315E2160A006A53BD /* Frameworks */,
 				500DD8A115E2160A006A53BD /* Products */,
@@ -79,6 +107,8 @@
 		500DD8AA15E2160A006A53BD /* Autograph */ = {
 			isa = PBXGroup;
 			children = (
+				500DD8E215E218E9006A53BD /* SmoothLineView.h */,
+				500DD8E315E218E9006A53BD /* SmoothLineView.m */,
 				500DD8B315E2160A006A53BD /* jotAppDelegate.h */,
 				500DD8B415E2160A006A53BD /* jotAppDelegate.m */,
 				500DD8B615E2160A006A53BD /* MainStoryboard_iPhone.storyboard */,
@@ -93,12 +123,43 @@
 		500DD8AB15E2160A006A53BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				500DD8C415E21829006A53BD /* Smooth Line View */,
 				500DD8AC15E2160A006A53BD /* Autograph-Info.plist */,
 				500DD8AD15E2160A006A53BD /* InfoPlist.strings */,
 				500DD8B015E2160A006A53BD /* main.m */,
 				500DD8B215E2160A006A53BD /* Autograph-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		500DD8C415E21829006A53BD /* Smooth Line View */ = {
+			isa = PBXGroup;
+			children = (
+				500DD8C515E21859006A53BD /* spline */,
+			);
+			name = "Smooth Line View";
+			sourceTree = "<group>";
+		};
+		500DD8C515E21859006A53BD /* spline */ = {
+			isa = PBXGroup;
+			children = (
+				500DD8C615E21859006A53BD /* BezierCurve.h */,
+				500DD8C715E21859006A53BD /* BezierCurve.m */,
+				500DD8C815E21859006A53BD /* CatmullRomSpline.h */,
+				500DD8C915E21859006A53BD /* CatmullRomSpline.m */,
+				500DD8CA15E21859006A53BD /* CGPointArithmetic.h */,
+				500DD8CB15E21859006A53BD /* CubicBezierCurve.h */,
+				500DD8CC15E21859006A53BD /* CubicBezierCurve.m */,
+				500DD8CD15E21859006A53BD /* LinearBezierCurve.h */,
+				500DD8CE15E21859006A53BD /* LinearBezierCurve.m */,
+				500DD8CF15E21859006A53BD /* NSArray_PointArray.h */,
+				500DD8D015E21859006A53BD /* NSArray_PointArray.m */,
+				500DD8D115E21859006A53BD /* QuadraticBezierCurve.h */,
+				500DD8D215E21859006A53BD /* QuadraticBezierCurve.m */,
+				500DD8D315E21859006A53BD /* Spline.h */,
+				500DD8D415E21859006A53BD /* Spline.m */,
+			);
+			path = spline;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +230,13 @@
 				500DD8B115E2160A006A53BD /* main.m in Sources */,
 				500DD8B515E2160A006A53BD /* jotAppDelegate.m in Sources */,
 				500DD8BE15E2160A006A53BD /* jotViewController.m in Sources */,
+				500DD8D515E21859006A53BD /* BezierCurve.m in Sources */,
+				500DD8D615E21859006A53BD /* CatmullRomSpline.m in Sources */,
+				500DD8D715E21859006A53BD /* CubicBezierCurve.m in Sources */,
+				500DD8D815E21859006A53BD /* LinearBezierCurve.m in Sources */,
+				500DD8D915E21859006A53BD /* NSArray_PointArray.m in Sources */,
+				500DD8DA15E21859006A53BD /* QuadraticBezierCurve.m in Sources */,
+				500DD8DB15E21859006A53BD /* Spline.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
