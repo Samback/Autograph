@@ -13,8 +13,11 @@
 #define VIEW_BACKGROUND_COLOR [UIColor lightGrayColor]
 #define PRICE_LABEL_COLOR     [UIColor whiteColor]
 #define PRICE_LABEL_FONT      [UIFont italicSystemFontOfSize:22]
+#define ALERT_TITLE           @"Autograph"
+#define ALERT_MESSAGE         @"Do you confirm this autograph?"
 
-@interface jotAutographView()
+
+@interface jotAutographView()<UIAlertViewDelegate>
 @property (nonatomic, strong) UIButton *acceptAutograph;
 @property (nonatomic, strong) UIButton *clearAutograph;
 @property (nonatomic, strong) UILabel  * priceLabel;
@@ -23,14 +26,15 @@
 @property (nonatomic        ) CGSize viewSize;
 @end
 
-const CGFloat PRICE_LABEL_HEIGHT = 30;
-const CGFloat BUTTONS_HEIGHT     = 44;
-const CGFloat DELTA_HEIGHT       = 10;
-const CGFloat BUTTONS_WIDTH      = 120;
-const CGFloat MARGINE_SIDE       = 2;
+const CGFloat PRICE_LABEL_HEIGHT = 30.0;
+const CGFloat BUTTONS_HEIGHT     = 44.0;
+const CGFloat DELTA_HEIGHT       = 10.0;
+const CGFloat BUTTONS_WIDTH      = 120.0;
+const CGFloat MARGINE_SIDE       = 2.0;
 
-NSString * CLEAR_BUTTON_TITLE = @"Clear";
+NSString * CLEAR_BUTTON_TITLE  = @"Clear";
 NSString * ACCEPT_BUTTON_TITLE = @"Accept";
+
 
 
 @implementation jotAutographView
@@ -116,12 +120,24 @@ NSString * ACCEPT_BUTTON_TITLE = @"Accept";
 
 -(void) acceptAutographFromScreen
 {
-    UIGraphicsBeginImageContextWithOptions(self.autographField.frame.size, YES, 0.0f);
-    [self.autographField.layer renderInContext:UIGraphicsGetCurrentContext()];
-    
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    [self.autographDelegate autographImage:image];
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:ALERT_TITLE message:ALERT_MESSAGE delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+    [alert show];  
 }
+
+#pragma mark - UIAlertViewDelegate methods
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+        [self clearScreen];
+    }else if(buttonIndex == 1)
+    {
+        UIGraphicsBeginImageContextWithOptions(self.autographField.frame.size, YES, 0.0f);
+        [self.autographField.layer renderInContext:UIGraphicsGetCurrentContext()];        
+        UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        [self.autographDelegate autographImage:image];
+    }
+}
+
 
 @end
