@@ -14,5 +14,5 @@
 @interface jotAutographView : UIView
 @property (nonatomic, unsafe_unretained) id<jotAutographViewDelegate>autographDelegate;
 - (id)initWithSuperFrame:(CGRect)superFrame theDelegate:(id<jotAutographViewDelegate>)delegate theSize:(CGSize) inputSize andTitle:(NSString *) price;
-
+-(void)redrawWithNewFrame:(CGRect)newFrame;
 @end

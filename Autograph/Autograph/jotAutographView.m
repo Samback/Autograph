@@ -53,7 +53,7 @@ NSString * ACCEPT_BUTTON_TITLE = @"Accept";
     self.viewSize  = inputSize;
     CGFloat xPos = (superFrame.size.width - autographWidth)/2;
     CGFloat yPos = (superFrame.size.height - autographHeight)/2;    
-    CGRect rect = CGRectMake(yPos, xPos, autographWidth, autographHeight);
+    CGRect rect = CGRectMake(xPos, yPos, autographWidth, autographHeight);
     self = [super initWithFrame:rect];
     if (self) {
         // Initialization code
@@ -122,6 +122,16 @@ NSString * ACCEPT_BUTTON_TITLE = @"Accept";
 {
     UIAlertView * alert = [[UIAlertView alloc] initWithTitle:ALERT_TITLE message:ALERT_MESSAGE delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
     [alert show];  
+}
+
+-(void)redrawWithNewFrame:(CGRect)newFrame
+{
+    CGFloat autographHeight = self.frame.size.height;
+    CGFloat autographWidth  = self.frame.size.width;
+    CGFloat xPos = (newFrame.size.width - autographWidth)/2;
+    CGFloat yPos = (newFrame.size.height - autographHeight)/2;
+    CGRect rect = CGRectMake(xPos, yPos, autographWidth, autographHeight);
+    self.frame = rect;
 }
 
 #pragma mark - UIAlertViewDelegate methods
