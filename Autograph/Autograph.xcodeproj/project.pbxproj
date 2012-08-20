@@ -25,6 +25,7 @@
 		500DD92015E22356006A53BD /* QuadraticBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD91815E22356006A53BD /* QuadraticBezierCurve.m */; };
 		500DD92115E22356006A53BD /* Spline.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD91A15E22356006A53BD /* Spline.m */; };
 		500DD92215E225AF006A53BD /* SmoothLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD8E315E218E9006A53BD /* SmoothLineView.m */; };
+		500DD92515E22851006A53BD /* jotAutographView.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DD92415E22851006A53BD /* jotAutographView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		500DD91815E22356006A53BD /* QuadraticBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuadraticBezierCurve.m; path = spline/QuadraticBezierCurve.m; sourceTree = "<group>"; };
 		500DD91915E22356006A53BD /* Spline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Spline.h; path = spline/Spline.h; sourceTree = "<group>"; };
 		500DD91A15E22356006A53BD /* Spline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Spline.m; path = spline/Spline.m; sourceTree = "<group>"; };
+		500DD92315E22851006A53BD /* jotAutographView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jotAutographView.h; sourceTree = "<group>"; };
+		500DD92415E22851006A53BD /* jotAutographView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jotAutographView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				500DD8BC15E2160A006A53BD /* jotViewController.h */,
 				500DD8BD15E2160A006A53BD /* jotViewController.m */,
 				500DD8AB15E2160A006A53BD /* Supporting Files */,
+				500DD92315E22851006A53BD /* jotAutographView.h */,
+				500DD92415E22851006A53BD /* jotAutographView.m */,
 			);
 			path = Autograph;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 				500DD91F15E22356006A53BD /* NSArray_PointArray.m in Sources */,
 				500DD92015E22356006A53BD /* QuadraticBezierCurve.m in Sources */,
 				500DD92115E22356006A53BD /* Spline.m in Sources */,
+				500DD92515E22851006A53BD /* jotAutographView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +278,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -286,8 +293,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv6";
 			};
@@ -301,6 +311,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -308,9 +319,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "armv7 armv6";
@@ -325,6 +338,7 @@
 				GCC_PREFIX_HEADER = "Autograph/Autograph-Prefix.pch";
 				INFOPLIST_FILE = "Autograph/Autograph-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos5.1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -337,6 +351,7 @@
 				GCC_PREFIX_HEADER = "Autograph/Autograph-Prefix.pch";
 				INFOPLIST_FILE = "Autograph/Autograph-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos5.1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
