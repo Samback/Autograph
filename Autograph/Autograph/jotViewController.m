@@ -41,11 +41,28 @@
 
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
+    UIDevice* thisDevice = [UIDevice currentDevice];
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
-         [self.autograph redrawWithNewFrame:CGRectMake(0, 0, 1024, 768)];
+        if(thisDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad)
+        {
+           [self.autograph redrawWithNewFrame:CGRectMake(0, 0, 1024, 768)];
+        }
+        else
+        {
+             [self.autograph redrawWithNewFrame:CGRectMake(0, 0, 480, 320)];
+        }
+
+         
     }else
     {
-         [self.autograph redrawWithNewFrame:CGRectMake(0, 0, 768, 1024)];
+        if(thisDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad)
+        {
+            [self.autograph redrawWithNewFrame:CGRectMake(0, 0,  768, 1024)];
+        }
+        else
+        {
+             [self.autograph redrawWithNewFrame:CGRectMake(0, 0, 320, 480)];
+        }       
     }
    
 }
